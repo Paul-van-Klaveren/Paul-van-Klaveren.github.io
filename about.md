@@ -4,6 +4,6 @@ permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+Versatile developer with a passion for clean code, a keen eye for design and a strong sense of usability. Enjoys mobile development, user-centered design, and getting things pixel perfect.
 
 {% include footer.html %}
