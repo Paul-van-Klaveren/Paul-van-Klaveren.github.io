@@ -5,6 +5,9 @@ meta_description: "notes · thoughts · experiments · quirks · gimmicks"
 aboutPage: true
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["superscript", "strikethrough"]
+
 highlighter: pygments
 
 paginate: 20
