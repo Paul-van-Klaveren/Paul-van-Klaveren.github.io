@@ -4,13 +4,24 @@ meta_description: "notes · thoughts · experiments · quirks · gimmicks"
 
 aboutPage: true
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["superscript", "strikethrough"]
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["superscript", "strikethrough"]
+# kramdown:
+  # input: GFM
+  #syntax_highlighter: rouge
+  # footnote_nr: 1
+#highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighting: rouge
 
-highlighter: pygments
+highlighter: rouge
 
 paginate: 20
+gems: [jekyll-paginate]
 baseurl: /
 domain_name: 'http://yourblog-domain.com'
 google_analytics: 'UA-XXXXXXXX-X'
