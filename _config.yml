@@ -4,22 +4,15 @@ meta_description: "notes · thoughts · experiments · quirks · gimmicks"
 
 aboutPage: true
 
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["superscript", "strikethrough"]
+# markdown: kramdown
 # kramdown:
-  # input: GFM
-  #syntax_highlighter: rouge
-  # footnote_nr: 1
-#highlighter: pygments
+#   input: GFM
+#   auto_ids: true
+#   syntax_highlighting: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighting: rouge
-
 highlighter: rouge
 
+gems: [jekyll-paginate]
 paginate: 20
 gems: [jekyll-paginate]
 baseurl: /
