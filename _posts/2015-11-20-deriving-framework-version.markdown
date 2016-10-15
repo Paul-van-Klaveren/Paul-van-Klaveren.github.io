@@ -16,7 +16,7 @@ When was the framework file *last changed* in the repository?
 $ git log -1 --format=%cd »file«
 Tue, 1 Sep 2015 12:02:22 +0200
 {% endhighlight %}
-^Source: [Stack Overflow][SO-last-changed]
+(Source: [^1])
 
 OK, now we just need to look up the latest version of the framework that would have been available on the 1st of September! 
 
@@ -32,10 +32,18 @@ When was the framework file *originally added* to the repository?
 $ git log --diff-filter=A --follow --format=%aD -1 -- »file«
 Tue Sep 29 15:47:02 2015 +0200
 {% endhighlight %}
-<sup>Source: [Stack Overflow][SO-first-added]</sup>
+<sup>(Source: [^2])</sup> or ^this2^
 
 ***
+
 Obviously, it would make sense to `alias` commands like these!
+
+***
+
+#### Sources
+
+[^1]: [Stack Overflow][SO-last-changed]
+[^2]: [Stack Overflow][SO-first-added]
 
 [SO-first-added]: http://stackoverflow.com/a/25633731
 [SO-last-changed]: http://stackoverflow.com/a/8611514
