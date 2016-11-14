@@ -11,9 +11,9 @@ date: 2015-11-20
 ***
 
 ### Time to investigate
-When was the framework file `XYZ` *last changed* in the repository?[^1]
+When was the framework file `xyz` *last changed* in the repository?[^1]
 {% highlight Bash %}
-$ git log -1 --format=%cd XYZ
+$ git log -1 --format=%cd xyz
 # Tue, 1 Sep 2015 12:02:22 +0200
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ Mystery solved.
 
 When was the framework file *originally added* to the repository? [^2]
 {% highlight bash %}
-$ git log --diff-filter=A --follow --format=%aD -1 -- XYZ
+$ git log --diff-filter=A --follow --format=%aD -1 -- xyz
 # Tue Sep 29 15:47:02 2015 +0200
 {% endhighlight %}
 

@@ -16,12 +16,12 @@ This is some text with a foot note.[^1]. Other text with a footnote.[^footnote].
 Or [^other-note] …and [^codeblock-note]
 
 ### Code block
-```
+``` swift 
 func explain(topic: String) {
-	let x = 123
-	if x ~= 0.bunchOfNumbers.count {
-		print("Glory!")
-	}
+   let x = 123
+   if x ~= 0.bunchOfNumbers.count {
+      print("Glory!")
+   }
 }
 ```
 NB. `bunchOfNumbers` can be any type of Collection.
@@ -29,24 +29,20 @@ Also, consider
 ruby: `x = Class.new`{:.language-ruby}
 bash: `for i in {1..4}; do echo KAAS; done`{:.language-bash}
 
-Using { % language } :
-{% highlight swift %}
-func explain(topic: String) {
-   let x = 123
-   if x ~= 0.bunchOfNumbers.count {
-      print("Glory!")
-   }
+``` swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
+    return true
 }
-{% endhighlight %}
+```
 
-text text text text text text text 
+> text text text text text text text 
 text text text text text 
 text text text text text text 
 text text text text text 
 text text text text text text text text 
 
-* list one
-^ 
+* list one 
 * list two
 text text text text 
 text text text text 
