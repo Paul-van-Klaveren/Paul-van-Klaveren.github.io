@@ -12,18 +12,23 @@ description: A.K.A. Bookmarking / Last Edit Location
 ***
 
 ### Code Snippet Placeholders
-From my [previous post on making Xcode snippets][post-on-xcode-snippets] you know that these can be quickly inserted & that you can jump between the placeholder fields using **Ctr /** 
+From my [previous post on making Xcode snippets][post-on-xcode-snippets] you know that these can be quickly inserted & that you can jump between the placeholder fields using **`Ctr /`** 
 …regardless if these placeholder fields are many lines of code apart!
 It's like dropping a breadcrumb.
+
+``` swift
+// TEST <#bookmark#>
+```
+
 
 ##### Positives
 • This will work in any version of Xcode (6, 7, 8), because we use the native Xcode functionality.
 
 ##### Negatives
--- It requires the developer to remove the placeholder before building, else Xcode will complain. 
--- If your workflow involves many small changes and re-builds the removal of the placeholders can become tedious. In practice, I'd expect you wouldn't need too many though.
+-- ? <strikethrough>It requires the developer to remove the placeholder before building, else Xcode will complain.</strikethrough> edit: just prefix them with `//` and Xcode will allow it. While you're at it, add `TEST` so you easily spot them in your `git diff`!
+-- ? If your workflow involves many small changes and re-builds, the removal of the placeholders can become tedious. In practice, I'd expect you wouldn't need too many though.
    
-⁇ can allow builds including placeholders? If so, cleaning up before submitting a PR would be the time to remove them, together with any debug stuff. 
+⁇ can allow builds including placeholders? If so, cleaning up before submitting a PR would be the time to remove them, together with any debug stuff. YES, no problem.
 
 -- You might have other snippets and don't want this snippet taking up space in the auto-complete box.
 
